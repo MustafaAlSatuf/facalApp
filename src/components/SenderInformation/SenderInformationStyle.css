@@ -1,0 +1,134 @@
+.ms-sender-information-card {
+  width: 70%;
+  height: max-content;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem 4rem;
+  border-radius: 1.875rem;
+  box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+}
+.ms-sender-information-card .ms-card-title {
+  font-size: 1.5rem;
+  color: #282828;
+  font-weight: 700;
+}
+.ms-sender-information-card .ms-card-des {
+  font-size: 1rem;
+  color: #282828;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.ms-sender-information-card .ms-card-input-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.ms-sender-information-card .ms-card-input-container .ms-card-column {
+  width: 100%;
+  height: max-content;
+  display: flex;
+
+  flex-direction: column;
+}
+.ms-sender-information-card
+  .ms-card-input-container
+  .ms-card-column
+  .ms-payment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.ms-sender-information-card .ms-card-input-container .ms-card-column div {
+  display: flex;
+
+  height: 4.2rem;
+  padding: 2.1875rem 0rem 0.25rem 0rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.125rem;
+  flex-shrink: 0;
+}
+.ms-sender-information-card .ms-card-input-container .ms-card-column div input,
+.ms-sender-information-card
+  .ms-card-input-container
+  .ms-card-column
+  div
+  select {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  border: none;
+  border-bottom: solid 1px #282828;
+}
+.ms-sender-information-card
+  .ms-card-input-container
+  .ms-card-column
+  div
+  input:focus,
+.ms-sender-information-card
+  .ms-card-input-container
+  .ms-card-column
+  div
+  select:focus {
+  border-bottom: solid 1px var(--clr-main);
+}
+.ms-sender-information-card .ms-card-input-container .ms-card-column div input,
+.ms-sender-information-card
+  .ms-card-input-container
+  .ms-card-column
+  div
+  select:focus {
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+.ms-sender-information-card .ms-card-input-container .ms-card-column div label {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+.ms-sender-information-card .lbl-error {
+  font-size: 0.7rem;
+  color: var(--clr-danger);
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .ms-sender-information-card {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .ms-sender-information-card .ms-card-input-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ms-sender-information-card {
+    padding: 2rem 2rem;
+  }
+  .ms-sender-information-card .ms-card-title,
+  .ms-sender-information-card .ms-card-des {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .ms-sender-information-card {
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    font-size: 12px;
+  }
+}

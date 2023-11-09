@@ -1,0 +1,84 @@
+.ms-main {
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  background: url("../../assets/Images/background-image.jpeg") lightgray 50% /
+    cover no-repeat;
+  padding: 0;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+.ms-main .ms-title {
+  color: #000;
+  font-size: 1.5rem;
+
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+}
+.ms-main .ms-des {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.ms-main .ms-buttuns {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+.ms-main .ms-buttuns .ms-cancel-btn {
+  color: #ea4335;
+  text-align: center;
+  width: max-content;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  height: 2.5rem;
+
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.ms-main .ms-buttuns .ms-cancel-btn:hover {
+  background-color: #ea4335;
+  color: white;
+  transform: translateY(-3px) scale(1.01);
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ms-main .ms-buttuns .ms-confirm-btn {
+  width: 13rem;
+  height: 2.5rem;
+  user-select: none;
+  line-height: 2.5rem;
+  color: white;
+  background-color: #282828;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.ms-main .ms-buttuns .ms-confirm-btn:hover {
+  transform: translateY(-5px) scale(1.01);
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: var(--clr-secondary-black);
+}
+@media (max-width: 768px) {
+  .ms-main .ms-des {
+    max-width: 70%;
+  }
+}
